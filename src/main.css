@@ -1,0 +1,6 @@
+@layer reset, fonts, base;
+
+/* Import each file into its respective layer */
+@import "./css/reset.css" layer(reset);
+@import "./css/fonts.css" layer(fonts);
+@import "./css/base.css" layer(base);
