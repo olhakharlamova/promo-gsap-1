@@ -10,13 +10,146 @@
     <main>
       <!-- <h1>hello world</h1>
     <button class="dark-grey-button club-demo-button" id="play">play</button> -->
-      <section>
+      <section style="height: 100vh; background-color: antiquewhite"></section>
+      <!-- <section style="height:100vh; background-color: #1d1d1d; padding-top:200px;">
+
         <div class="ws_diagram">
-          <div class="point" style="--x: 1; --y: 6; --w: 2; --h: 15"><div class="bar"></div></div>
-          <div class="point" style="--x: 5; --y: 13; --w: 2; --h: 8"><div class="bar"></div></div>
-          <div class="point" style="--x: 3; --y: 0; --w: 1; --h: 2; background-color: antiquewhite;"><div class="bar"></div></div>
+          <div class="point" style="--x: 1; --y: 6; --w: 2; --h: 15">
+            <div class="label">3849</div>
+            <div class="bar"></div>
+          </div>
         </div>
-        <button id="play" class="dark-grey-button club-demo-button" type="button" style="margin-top:2rem;">Reload Animation</button>
+      </section> -->
+      <section class="new-svg" style="
+    display: grid;
+    place-items: center;
+">
+         <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 490 440"
+          width="100%"
+          height="100%"
+          preserveAspectRatio="xMinYMin meet"
+        >
+          <defs>
+            <style>
+              .svg-label {
+                font-family: FiraSans-Regular, "Fira Sans";
+                font-size: 16px;
+                text-anchor: middle;
+                dominant-baseline: middle;
+              }
+              .main-color {
+                fill: #ffa06d;
+              }
+              .secondary-color {
+                fill: #acacac;
+              }
+              .dark-fill {
+                fill: #333232;
+              }
+              .light-fill {
+                fill: #B3663B;
+              }
+              .bar-dark {
+                fill: #4a4a4a;
+              }
+              .block-fill {
+                fill: #5f3823;
+              }
+              .grid-line {
+                stroke: #4a4a4a;
+                stroke-width: 1;
+                fill: none;
+              }
+            </style>
+          </defs>
+
+          <!-- Axis -->
+          <polyline class="grid-line" points="10,10 10,380 480,380" />
+
+          <!-- Other Clinics Bar -->
+          <g id="group-other-clinics">
+            <text class="svg-label secondary-color" x="100" y="40">
+              <tspan x="100" dy="0">Up to</tspan>
+              <tspan x="98" dy="1.35rem">$7000</tspan>
+            </text>
+            <rect
+              id="bar7000"
+              x="67"
+              y="90"
+              width="60"
+              height="290"
+              class="bar-dark"
+              rx="8"
+              ry="8"
+            />
+            <text class="svg-label secondary-color" x="89" y="410">
+              <tspan x="100" dy="0">Other</tspan>
+              <tspan x="97" dy="1.35rem">Clinics</tspan>
+            </text>
+          </g>
+
+          <!-- Discovery Dental Bar -->
+          <g id="group-discovery-dental">
+            <text class="svg-label main-color" x="217" y="170">
+              <tspan x="220" dy="0">Only</tspan>
+              <tspan x="217" dy="1.35rem">$3849</tspan>
+            </text>
+            <rect
+              id="bar3849"
+              x="187"
+              y="220"
+              width="60"
+              height="160"
+              class="light-fill"
+              rx="6"
+              ry="6"
+            />
+            <text class="svg-label main-color" x="217" y="410">
+              <tspan x="217" dy="0">Discovery</tspan>
+              <tspan x="214" dy="1.3rem">Dental</tspan>
+            </text>
+          </g>
+
+          <!-- Right Info Block: Duration -->
+          <g id="treatment-duration">
+            <rect
+              x="320"
+              y="70"
+              width="150"
+              height="80"
+              rx="8"
+              ry="8"
+              class="dark-fill"
+            />
+            <text class="svg-label secondary-color" x="395" y="100">
+              <tspan x="395" dy="0">Just 6–8 months</tspan>
+              <tspan x="393" dy="1.3rem">treatment</tspan>
+            </text>
+          </g>
+
+          <!-- Right Info Block: Inclusive Offer -->
+          <g id="all-inclusive-block">
+            <rect
+              x="320"
+              y="180"
+              width="150"
+              height="100"
+              rx="6"
+              ry="6"
+              class="block-fill"
+            />
+            <text class="svg-label main-color" x="395" y="210">
+              <tspan x="395" dy="0">Only $3849 for</tspan>
+              <tspan x="395" dy="1.35rem">All-Inclusive</tspan>
+              <tspan x="395" dy="1.35rem">Treatment</tspan>
+            </text>
+          </g>
+        </svg>
+      </section>
+      <section style="height: 100vh; background-color: antiquewhite">
+       
       </section>
     </main>
     <script type="module" src="/src/main.js"></script>
